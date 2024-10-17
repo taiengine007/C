@@ -6,6 +6,7 @@ int main()
 
  int arr[]= {1,2,3,4,5,6,7};
  int rot[7];
+ int lrt[7];
 
  int i,k,size;
 
@@ -26,6 +27,12 @@ int main()
   
  }
 
+ for(i=0;i<size;i++)	
+ {
+  lrt[(i+size-k)%size]= arr[i];
+  
+ }
+
  for(i=0;i<size;i++)
  {
    arr[i]= rot[i];
@@ -36,6 +43,13 @@ int main()
 	 printf("%d ",arr[i]);
  
  }
+ printf("\n");
+   
+ for(i=0;i<size;i++)
+ {
+   printf("%d  ",lrt[i]);
+ }
+
  printf("\n");
 
 
