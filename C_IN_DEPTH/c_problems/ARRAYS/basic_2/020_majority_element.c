@@ -23,11 +23,45 @@ https://www.youtube.com/watch?v=n5QY3x_GNDg
 
 int main()
 {
-  int arr[] ={3,3,4,2,3};
+  int arr[] ={5,5,5,3,5,5,2,5,3,5,2,5};
+  int i,candidate;
+  int count = 0;
+  int n= sizeof(arr)/sizeof(arr[0]);
   //majority is 3 since its repeating thrice
 
   for(i=0;i<n;i++)
   {
+	  if(count == 0)
+	  {
+	    candidate = arr[i];
+
+	  }
+	  else if (candidate = arr[i])
+	  {
+	   count++;
+	  }
+	  else{
+	  count --;
+
+	  }
+
+
+	  count =0;
+	  for(i=0;i<n;i++){
+	    if(candidate ==arr[i])
+	    {
+	    count++;
+	    }
+	  }
+
+
+	  if(count> n/2)
+	  {
+	  printf("candidate exists and he is %d",candidate);
+	  }
+	  else{
+	  printf("no cand\n");
+	  }
   
      
   
