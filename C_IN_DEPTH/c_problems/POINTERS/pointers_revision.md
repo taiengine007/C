@@ -1,5 +1,3 @@
-Certainly! Here’s a detailed explanation of each exercise problem on pointers in C, along with code snippets and explanations where applicable.
-
 ### 1. Pointer Basics
 
 **a. Declare an integer variable and a pointer to it. Assign a value to the variable and print its value using both the variable and the pointer.**
