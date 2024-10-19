@@ -17,6 +17,7 @@ int main()
   int n=sizeof(arr)/sizeof(arr[0]);
 
   //quick select
+  //lets do this in algorithms after quick sort
 
 
 return 0;
