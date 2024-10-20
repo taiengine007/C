@@ -153,3 +153,153 @@ int main() {
 }
 ```
 
+### 8. `strstr()`
+Finds the first occurrence of a substring in a string.
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char haystack[] = "Hello, world! Welcome to C programming.";
+    char needle[] = "world";
+
+    // Using strstr
+    char *found = strstr(haystack, needle);
+    if (found) {
+        printf("Substring found: %s\n", found);
+    } else {
+        printf("Substring not found.\n");
+    }
+
+    return 0;
+}
+```
+
+### 9. `strerror()`
+Returns a pointer to the error message string corresponding to an error number.
+```c
+#include <stdio.h>
+#include <string.h>
+#include <errno.h>
+
+int main() {
+    FILE *file = fopen("non_existent_file.txt", "r");
+    if (!file) {
+        // Using strerror to print the error message
+        printf("Error opening file: %s\n", strerror(errno));
+    }
+    return 0;
+}
+```
+
+### 10. `strspn()` and `strcspn()`
+Calculates the length of the initial segment consisting of characters in or not in a set.
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[] = "abc12345def";
+    char accept[] = "abc123";
+
+    // Using strspn
+    size_t len = strspn(str, accept);
+    printf("Length of initial segment matching: %zu\n", len);
+
+    // Using strcspn
+    len = strcspn(str, "45");
+    printf("Length of initial segment not containing '45': %zu\n", len);
+
+    return 0;
+}
+```
+
+### 11. `strpbrk()`
+Finds the first occurrence of any character from one string in another string.
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str1[] = "Hello, world!";
+    char str2[] = "aeiou";
+
+    // Using strpbrk
+    char *found = strpbrk(str1, str2);
+    if (found) {
+        printf("First vowel found: %c\n", *found);
+    } else {
+        printf("No vowels found.\n");
+    }
+
+    return 0;
+}
+```
+
+### 12. `strdup()` and `strndup()`
+Duplicates a string. `strdup` duplicates the entire string, while `strndup` duplicates up to `n` characters.
+```c
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int main() {
+    char str[] = "Hello, world!";
+
+    // Using strdup
+    char *dup = strdup(str);
+    if (dup) {
+        printf("Duplicated string using strdup: %s\n", dup);
+        free(dup); // Don't forget to free the allocated memory
+    }
+
+    // Using strndup
+    char *ndup = strndup(str, 5);
+    if (ndup) {
+        printf("Duplicated string using strndup: %s\n", ndup);
+        free(ndup); // Free the allocated memory
+    }
+
+    return 0;
+}
+```
+
+### 13. `memcmp()`
+Compares the first `n` bytes of two memory blocks.
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char mem1[] = "Hello, world!";
+    char mem2[] = "Hello, Earth!";
+
+    // Using memcmp
+    int result = memcmp(mem1, mem2, 5);
+    if (result == 0) {
+        printf("The first 5 bytes are identical.\n");
+    } else {
+        printf("The first 5 bytes are different.\n");
+    }
+
+    return 0;
+}
+```
+
+### 14. `memset()`
+Fills a block of memory with a specified value.
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[20] = "Hello, world!";
+
+    // Using memset to set the first 5 characters to '*'
+    memset(str, '*', 5);
+    printf("Modified string: %s\n", str);
+
+    return 0;
+}
+```
+
