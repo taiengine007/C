@@ -8,8 +8,6 @@ This project is an implementation of various operations on a singly linked list 
 3. [Building the Project](#building-the-project)
 4. [Running the Program](#running-the-program)
 5. [Future Improvements](#future-improvements)
-6. [Contributing](#contributing)
-7. [License](#license)
 
 ## Project Structure
 
