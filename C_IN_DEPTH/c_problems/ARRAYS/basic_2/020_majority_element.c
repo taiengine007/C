@@ -34,20 +34,19 @@ int main()
 	  if(count == 0)
 	  {
 	    candidate = arr[i];
-
 	  }
 	  else if (candidate = arr[i])
 	  {
 	   count++;
 	  }
-	  else{
+	  else
+	  {
 	  count --;
-
 	  }
 
-
 	  count =0;
-	  for(i=0;i<n;i++){
+	  for(i=0;i<n;i++)
+	  {
 	    if(candidate ==arr[i])
 	    {
 	    count++;
@@ -59,12 +58,10 @@ int main()
 	  {
 	  printf("candidate exists and he is %d",candidate);
 	  }
-	  else{
+	  else
+	  {
 	  printf("no cand\n");
 	  }
-  
-     
-  
   }
 
 return 0;

@@ -4,7 +4,8 @@
 **Array Practice Problems**
 
 ### Arrays and Subarrays
-1. [Subarray with Given Sum](https://leetcode.com/problems/subarray-sum-equals-k/)
+1. [Subarray Sum equals k](https://leetcode.com/problems/subarray-sum-equals-k/)
+1. [Indexes of Subarray Sum](https://www.geeksforgeeks.org/problems/subarray-with-given-sum-1587115621/1)
 2. [Count the Triplets](https://leetcode.com/problems/3sum/)
 3. [Kadane's Algorithm](https://leetcode.com/problems/maximum-subarray/)
 4. [Missing Number in Array](https://leetcode.com/problems/missing-number/)
