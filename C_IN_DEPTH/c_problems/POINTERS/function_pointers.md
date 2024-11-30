@@ -130,5 +130,6 @@ int main() {
 - Ensure the function signature matches the pointer declaration.
 - Be cautious of `NULL` function pointers or uninitialized pointers to avoid segmentation faults.
 - Use function pointers sparingly to avoid making code harder to read and maintain.
+-------------------------------------------------------------------------------------------------
 
 
