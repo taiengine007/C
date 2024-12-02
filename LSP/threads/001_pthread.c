@@ -3,6 +3,7 @@
 #include<unistd.h>
 
 
+void * print_
 
 int main()
 {
