@@ -49,6 +49,26 @@ void display(struct Node** phead){
 
 
 }
+
+void insert_at_pos(struct Node** phead, int value,int pos){
+	struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+	newNode->data = value;
+	if(pos ==1){
+	newNode->next =*phead;
+	*phead = newNode;
+	return;
+	}
+	struct Node* temp=*phead ;
+	for(int i=1; i<pos-1; i++){
+		temp= temp->next;
+	}
+	if(temp == NULL){
+	printf("pos is out of bounds \n");
+	return ;
+	}
+	newNode->next = temp->next;
+	temp->next=newNode;
+}
 int main(){
 
 
@@ -61,6 +81,9 @@ int main(){
 	insert_at_end(&head,14);
 	insert_at_end(&head,15);
 
+	display(&head);
+
+	insert_at_pos(&head,5,2);
 	display(&head);
 
 	//delete_node(&head,10);

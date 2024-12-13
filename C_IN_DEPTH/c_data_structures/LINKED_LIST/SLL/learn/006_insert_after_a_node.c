@@ -49,6 +49,28 @@ void display(struct Node** phead){
 
 
 }
+void insert_after_node(struct Node** phead, int value, int target){
+
+	struct Node* temp = *phead;
+
+	while(temp!=NULL && temp->data!= target){
+	temp = temp->next;
+	}
+	if(temp == NULL){
+	 printf("target item not found\n");
+	 return ;
+	}
+
+	struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+	newNode->data = value;
+	newNode->next = temp->next;
+	temp->next = newNode;
+
+
+
+
+
+}
 int main(){
 
 
@@ -61,6 +83,9 @@ int main(){
 	insert_at_end(&head,14);
 	insert_at_end(&head,15);
 
+	display(&head);
+
+	insert_after_node(&head,77,13);
 	display(&head);
 
 	//delete_node(&head,10);

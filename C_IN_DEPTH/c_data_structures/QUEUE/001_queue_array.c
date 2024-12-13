@@ -23,100 +23,10 @@
 //
 ////////////////////////////////////////////////////
 
-#include<stdio.h>
-#include<stdlib.h>
-#define MAX 5
-
-//queue
-struct Queue
-{
-  int data[MAX];
-  int front;
-  int rear;
-}
-
-//operations
-
-struct Queue * createQ();
-void enqueue(struct Queue* q, int value);
-int dequeue(struct Queue* q);
-void disQ(struct Queue* q);
-int isempty(struct Queue * q);
-int isfull(struct Queue * q);
 
 
 
-
-
-int main()
-{
-struct Queue* q = createQ();
-
-enQ(q,10);
-enQ(q,20);
-enQ(q,30);
-enQ(q,40);
-enQ(q,50);
-disQ(q);
-//////////////
-deQ(q);
-deQ(q);
-disQ(q);
-//////////////////////
-enQ(q,60);
-enQ(q,70);
-disQ(q);
-//////////////////////
-
-return 0;
-}
-struct Queue * createQ(){
-  struct Queue* q = (struct Queue* )malloc(sizeof(truct Queue) );
-  q->front = -1;
-  q-> rear =-1;
-  return q;
-
-}
-void enqueue(struct Queue* q, int value)
-{
-    if(isfull())
-    {
-    
-    }
-    else
-    {
-      //enter value in data
-      //increment the rear value
-    }  
-
-}
-int dequeue(struct Queue* q)
-{
-   if(isempty())
-   {
-   
-   }
-   else
-   {
-     //value at front is popped
-     // rear + 1
-   }
-}
-void disQ(struct Queue* q);
-int isempty(struct Queue * q)
-{
-  return (q->front == -1);
-}
-int isfull(struct Queue * q)
-{
-  return ((q->rear +1)%MAX== (q->front))
-}
-
-
-
-////////////////////
-/*
- *#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #define MAX 5 // Maximum number of elements in the queue
 
@@ -219,4 +129,3 @@ int main() {
     return 0;
 }
 
- */

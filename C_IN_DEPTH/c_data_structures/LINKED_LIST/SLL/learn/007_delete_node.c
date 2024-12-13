@@ -49,6 +49,25 @@ void display(struct Node** phead){
 
 
 }
+void delete_node(struct Node** phead, int target){
+
+	struct Node* temp = *phead;
+	struct Node* prev = NULL;
+
+	while(temp!= NULL && temp->data!= target){
+		prev= temp;
+		temp= temp->next;
+	}
+
+	prev->next = temp->next;
+
+	free(temp);
+
+
+
+
+
+}
 int main(){
 
 
@@ -63,7 +82,8 @@ int main(){
 
 	display(&head);
 
-	//delete_node(&head,10);
+	delete_node(&head,14);
+	display(&head);
 
 return 0;
 }

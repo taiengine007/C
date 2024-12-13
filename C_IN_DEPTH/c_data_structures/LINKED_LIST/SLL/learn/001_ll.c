@@ -103,9 +103,7 @@ void insert_after_node();
 void insert_before_node();
 //---------------------------------------
 
-
 //////////////////////////////////////////////////
-
 
 
 void delete_at_begin();
@@ -119,9 +117,6 @@ void delete_before_node();
 //////////////////////////////////////////////////
 
 void display_list();
-
-
-
 
 
 
