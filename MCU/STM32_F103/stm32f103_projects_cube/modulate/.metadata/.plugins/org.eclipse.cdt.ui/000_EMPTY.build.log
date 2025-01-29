@@ -1,0 +1,10 @@
+12:32:18 **** Build of configuration Debug for project 000_EMPTY ****
+make -j8 all 
+arm-none-eabi-size  000_EMPTY.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3292	     92	   1900	   5284	   14a4	000_EMPTY.elf
+Finished building: default.size.stdout
+ 
+
+12:32:19 Build Finished. 0 errors, 0 warnings. (took 700ms)
+

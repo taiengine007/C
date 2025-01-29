@@ -3,7 +3,13 @@
 #include<unistd.h>
 
 
-void * print_
+void * print_thread_id(void* arg){
+
+	printf("id thread == %lu -\n",pthread_self());
+
+
+
+}
 
 int main()
 {
@@ -12,9 +18,12 @@ int main()
 	pthread_t threads[5];
 
 	for(int i=0; i<5; i++){
-	pthread_create(&threads[i],NULL,print_thread_id);
+	pthread_create(&threads[i],NULL,print_thread_id,NULL);
 	
 	}
+	    for (int i = 0; i < 5; i++) {
+        pthread_join(threads[i], NULL); // Wait for all threads to complete
+    }
 }
 
 /////////////////////////////////////////////////

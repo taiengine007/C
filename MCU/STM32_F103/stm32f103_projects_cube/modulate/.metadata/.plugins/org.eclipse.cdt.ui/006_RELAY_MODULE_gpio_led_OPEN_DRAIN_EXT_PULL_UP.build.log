@@ -1,0 +1,10 @@
+14:01:17 **** Incremental Build of configuration Debug for project 006_RELAY_MODULE_gpio_led_OPEN_DRAIN_EXT_PULL_UP ****
+make -j8 all 
+arm-none-eabi-size  006_RELAY_MODULE_gpio_led_OPEN_DRAIN_EXT_PULL_UP.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7756	    104	   1904	   9764	   2624	006_RELAY_MODULE_gpio_led_OPEN_DRAIN_EXT_PULL_UP.elf
+Finished building: default.size.stdout
+ 
+
+14:01:18 Build Finished. 0 errors, 0 warnings. (took 637ms)
+

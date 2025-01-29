@@ -1,0 +1,48 @@
+12:32:28 **** Build of configuration Debug for project 004_oled_helloworld_i2c ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I"F:/MCU/MODULATING_VALVE/004_oled_helloworld_i2c/Core/Src/u8g2" -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/u8x8_stm32_i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I"F:/MCU/MODULATING_VALVE/004_oled_helloworld_i2c/Core/Src/u8g2" -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/u8x8_stm32_i2c.d" -MT"Core/Src/u8x8_stm32_i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/u8x8_stm32_i2c.o"
+../Core/Src/u8x8_stm32_i2c.c:1:10: fatal error: u8g2.h: No such file or directory
+    1 | #include "u8g2.h"
+      |          ^~~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:37: Core/Src/u8x8_stm32_i2c.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c:61:1: error: unknown type name 'u8g2_t'
+   61 | u8g2_t u8g2;
+      | ^~~~~~
+../Core/Src/main.c: In function 'u8g2Init':
+../Core/Src/main.c:64:5: warning: implicit declaration of function 'u8g2_Setup_sh1106_i2c_128x64_noname_f' [-Wimplicit-function-declaration]
+   64 |     u8g2_Setup_sh1106_i2c_128x64_noname_f(&u8g2, U8G2_R0, u8x8_byte_hw_i2c, u8x8_gpio_and_delay_stm32);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:64:50: error: 'U8G2_R0' undeclared (first use in this function)
+   64 |     u8g2_Setup_sh1106_i2c_128x64_noname_f(&u8g2, U8G2_R0, u8x8_byte_hw_i2c, u8x8_gpio_and_delay_stm32);
+      |                                                  ^~~~~~~
+../Core/Src/main.c:64:50: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:64:59: error: 'u8x8_byte_hw_i2c' undeclared (first use in this function)
+   64 |     u8g2_Setup_sh1106_i2c_128x64_noname_f(&u8g2, U8G2_R0, u8x8_byte_hw_i2c, u8x8_gpio_and_delay_stm32);
+      |                                                           ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:64:77: error: 'u8x8_gpio_and_delay_stm32' undeclared (first use in this function)
+   64 |     u8g2_Setup_sh1106_i2c_128x64_noname_f(&u8g2, U8G2_R0, u8x8_byte_hw_i2c, u8x8_gpio_and_delay_stm32);
+      |                                                                             ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:65:5: warning: implicit declaration of function 'u8g2_InitDisplay' [-Wimplicit-function-declaration]
+   65 |     u8g2_InitDisplay(&u8g2);
+      |     ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:66:5: warning: implicit declaration of function 'u8g2_SetPowerSave' [-Wimplicit-function-declaration]
+   66 |     u8g2_SetPowerSave(&u8g2, 0);
+      |     ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'displayHelloWorld':
+../Core/Src/main.c:70:5: warning: implicit declaration of function 'u8g2_ClearBuffer' [-Wimplicit-function-declaration]
+   70 |     u8g2_ClearBuffer(&u8g2);
+      |     ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:71:5: warning: implicit declaration of function 'u8g2_DrawStr' [-Wimplicit-function-declaration]
+   71 |     u8g2_DrawStr(&u8g2, 0, 20, "Hello World!");
+      |     ^~~~~~~~~~~~
+../Core/Src/main.c:72:5: warning: implicit declaration of function 'u8g2_SendBuffer' [-Wimplicit-function-declaration]
+   72 |     u8g2_SendBuffer(&u8g2);
+      |     ^~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+12:32:31 Build Failed. 8 errors, 6 warnings. (took 3s.62ms)
+

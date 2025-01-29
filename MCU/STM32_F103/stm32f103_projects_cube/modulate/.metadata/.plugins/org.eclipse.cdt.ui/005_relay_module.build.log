@@ -1,0 +1,10 @@
+12:32:32 **** Build of configuration Debug for project 005_relay_module ****
+make -j8 all 
+arm-none-eabi-size  005_relay_module.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4796	     12	   1572	   6380	   18ec	005_relay_module.elf
+Finished building: default.size.stdout
+ 
+
+12:32:34 Build Finished. 0 errors, 0 warnings. (took 1s.694ms)
+

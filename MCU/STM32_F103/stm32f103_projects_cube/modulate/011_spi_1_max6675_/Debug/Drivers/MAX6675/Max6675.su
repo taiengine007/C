@@ -1,0 +1,2 @@
+../Drivers/MAX6675/Max6675.c:17:16:SPI_RxByte	32	static
+../Drivers/MAX6675/Max6675.c:29:6:ReadThermoCouple	24	static

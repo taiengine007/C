@@ -1,0 +1,10 @@
+10:32:26 **** Incremental Build of configuration Debug for project 016_adc_read_temperature ****
+make -j8 all 
+arm-none-eabi-size  016_adc_read_temperature.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24236	    468	   1956	  26660	   6824	016_adc_read_temperature.elf
+Finished building: default.size.stdout
+ 
+
+10:32:27 Build Finished. 0 errors, 0 warnings. (took 743ms)
+

@@ -1,0 +1,9 @@
+15:55:14 **** Build of configuration Debug for project 009_ADC_i_to_v ****
+make -j8 all 
+arm-none-eabi---u_printf_float -o "009_ADC_i_to_v.elf" @"objects.list"   -mcpu=cortex-m3 -T"F:\MCU\MODULATING_VALVE\009_ADC_i_to_v\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="009_ADC_i_to_v.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:/st/stm32cubeide_1.15.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_2.1.300.202402091052/tools/bin/sh: arm-none-eabi---u_printf_float: not found
+make: *** [makefile:64: 009_ADC_i_to_v.elf] Error 127
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+15:55:14 Build Failed. 1 errors, 0 warnings. (took 729ms)
+

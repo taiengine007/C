@@ -1,0 +1,19 @@
+12:32:20 **** Build of configuration Debug for project 000_open_OCD ****
+make -j8 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103rbtx.d" -MT"Startup/startup_stm32f103rbtx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103rbtx.o" "../Startup/startup_stm32f103rbtx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32F103RBTx -DSTM32 -DSTM32F1 -DNUCLEO_F103RB -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32F103RBTx -DSTM32 -DSTM32F1 -DNUCLEO_F103RB -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "000_open_OCD.elf" @"objects.list"   -mcpu=cortex-m3 -T"F:\MCU\MODULATING_VALVE\000_open_OCD\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="000_open_OCD.map" -Wl,--gc-sections -static -specs=rdimon.specs -lc -lrdimon --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 000_open_OCD.elf
+ 
+arm-none-eabi-size  000_open_OCD.elf 
+arm-none-eabi-objdump -h -S 000_open_OCD.elf  > "000_open_OCD.list"
+   text	   data	    bss	    dec	    hex	filename
+   4384	    100	   2076	   6560	   19a0	000_open_OCD.elf
+Finished building: default.size.stdout
+ 
+Finished building: 000_open_OCD.list
+ 
+
+12:32:22 Build Finished. 0 errors, 0 warnings. (took 1s.785ms)
+

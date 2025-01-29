@@ -1,0 +1,10 @@
+14:02:00 **** Incremental Build of configuration Debug for project 019_adc_mcp_gpio_MAIN ****
+make -j8 all 
+arm-none-eabi-size  019_adc_mcp_gpio_MAIN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28476	    468	   2052	  30996	   7914	019_adc_mcp_gpio_MAIN.elf
+Finished building: default.size.stdout
+ 
+
+14:02:00 Build Finished. 0 errors, 0 warnings. (took 805ms)
+

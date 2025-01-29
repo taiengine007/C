@@ -1,0 +1,6 @@
+../Core/Src/main.c:77:7:readTemperature	2
+../Core/Src/main.c:105:5:main	1
+../Core/Src/main.c:144:6:SystemClock_Config	4
+../Core/Src/main.c:190:13:MX_ADC1_Init	3
+../Core/Src/main.c:237:13:MX_GPIO_Init	1
+../Core/Src/main.c:271:6:Error_Handler	1

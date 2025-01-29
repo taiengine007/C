@@ -14,11 +14,11 @@ int main()
 
 	int i,j;
 
-	for(i=0;i<5;i++)
+	for(i=0;i<=5;i++)
 	{
-		for(j=0;j<5;j++)
+		for(j=0;j<=5;j++)
 		{ 
-			printf("i=%d,j=%d\n",i,j);
+			//printf("i=%d,j=%d\n",i,j);
 
 		if(j==3)
 		  {
@@ -28,6 +28,7 @@ int main()
 	  	printf("----------------------------------------------inside j loop---%d==j\n",j);
 
 		}
+		printf("====%d==\n",i);
 	}
 
 return 0;

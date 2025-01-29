@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;019_ADCread_mcp4725valve_gpio/015_ADC_TO_MCP4725_i2c_MAIN_IMPORTANT.ioc&apos; to &apos;019_adc_mcp_gpio.ioc&apos;" description="Rename resource &apos;015_ADC_TO_MCP4725_i2c_MAIN_IMPORTANT.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="015_ADC_TO_MCP4725_i2c_MAIN_IMPORTANT.ioc" name="019_adc_mcp_gpio.ioc" stamp="1738131611049" updateReferences="true"/>
+</session>

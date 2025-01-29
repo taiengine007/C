@@ -1,0 +1,17 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:015_ADC_TO_MCP4725_i2c,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:021_opt Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:006_gpio_led_OPEN_DRAIN_EXT_PULL_UP,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:007_I2C_OLED,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:008_SPI_TEMP_MAX6675,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:011_spi_1_max6675_,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:003_experimental_clock_ioc,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:013_I2C2_MCP4725_XTR,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:012_adc_,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:017_adc_2_read_temp_copied_working,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:016_adc_read_temperature,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:019_adc_mcp_gpio_MAIN Debug (1)
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:000_EMPTY/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:000_EMPTY/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:000_open_OCD\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:001_cube_not_all/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:003_experimental_clock_ioc/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:003_experimental_clock_ioc/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:007_I2C_OLED/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:019_adc_mcp_gpio_MAIN\ Debug\ (1)/activeLaunchTarget=null\:---
+org.eclipse.launchbar.core.descriptorType.default\:000_open_OCD\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:002_all_initP_cube\ Debug/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:002_all_initP_cube\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:021_opt\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

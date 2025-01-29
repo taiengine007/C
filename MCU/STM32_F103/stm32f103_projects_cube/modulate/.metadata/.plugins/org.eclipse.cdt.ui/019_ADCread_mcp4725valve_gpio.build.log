@@ -1,0 +1,10 @@
+11:50:44 **** Incremental Build of configuration Debug for project 019_ADCread_mcp4725valve_gpio ****
+make -j8 all 
+arm-none-eabi-size  019_ADCread_mcp4725valve_gpio.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26172	    468	   2052	  28692	   7014	019_ADCread_mcp4725valve_gpio.elf
+Finished building: default.size.stdout
+ 
+
+11:50:45 Build Finished. 0 errors, 0 warnings. (took 771ms)
+

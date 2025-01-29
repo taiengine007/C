@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;020_adc_mcpI2C2_gpio_OLEDI2C1_MAIN2/019_adc_mcp_gpio_MAIN.ioc&apos; to &apos;020_adc_mcpI2C2_gpio_OLEDI2C1_MAIN2.ioc&apos;" description="Rename resource &apos;019_adc_mcp_gpio_MAIN.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="019_adc_mcp_gpio_MAIN.ioc" name="020_adc_mcpI2C2_gpio_OLEDI2C1_MAIN2.ioc" stamp="1738133285553" updateReferences="true"/>
+</session>

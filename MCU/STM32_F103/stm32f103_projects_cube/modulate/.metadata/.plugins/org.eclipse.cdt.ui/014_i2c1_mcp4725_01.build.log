@@ -1,0 +1,10 @@
+13:09:30 **** Incremental Build of configuration Debug for project 014_i2c1_mcp4725_01 ****
+make -j8 all 
+arm-none-eabi-size  014_i2c1_mcp4725_01.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11216	    104	   2080	  13400	   3458	014_i2c1_mcp4725_01.elf
+Finished building: default.size.stdout
+ 
+
+13:09:34 Build Finished. 0 errors, 0 warnings. (took 3s.406ms)
+

@@ -1,0 +1,16 @@
+14:49:53 **** Build of configuration Debug for project 017_adc_2_read_temp ****
+make -j8 all 
+arm-none-eabi-gcc -o "017_adc_2_read_temp.elf" @"objects.list"   -mcpu=cortex-m3 -T"F:\MCU\MODULATING_VALVE\017_adc_2_read_temp\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="017_adc_2_read_temp.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 017_adc_2_read_temp.elf
+ 
+arm-none-eabi-size  017_adc_2_read_temp.elf 
+arm-none-eabi-objdump -h -S 017_adc_2_read_temp.elf  > "017_adc_2_read_temp.list"
+   text	   data	    bss	    dec	    hex	filename
+  23564	    468	   1956	  25988	   6584	017_adc_2_read_temp.elf
+Finished building: default.size.stdout
+ 
+Finished building: 017_adc_2_read_temp.list
+ 
+
+14:49:55 Build Finished. 0 errors, 0 warnings. (took 1s.253ms)
+

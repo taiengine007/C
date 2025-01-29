@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;018_adc_read_gpio_relay_/016_adc_read_temperature.ioc&apos; to &apos;018_adc_read_gpio_relay_.ioc&apos;" description="Rename resource &apos;016_adc_read_temperature.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="016_adc_read_temperature.ioc" name="018_adc_read_gpio_relay_.ioc" stamp="1738130234337" updateReferences="true"/>
+</session>
